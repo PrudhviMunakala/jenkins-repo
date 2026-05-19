@@ -8,19 +8,19 @@ pipeline {
                 stage('build') {
                     steps {
                         sh """
-                            echo "build"
-                            exit 1
+                            echo "build success"
+                            
                           """
                     }
                 }
                 stage('test') {
                     steps {
-                        echo "test"
+                        echo "test success"
                     }
                 }
                 stage('deploy') {
                     steps {
-                        echo "deploy"
+                        echo "deploy success"
                     }
                 }
         
