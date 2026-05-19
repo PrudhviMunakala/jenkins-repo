@@ -7,7 +7,10 @@ pipeline {
         stages {
                 stage('build') {
                     steps {
-                        echo "build"
+                        sh """
+                            echo "build"
+                            exit 1
+                          """
                     }
                 }
                 stage('test') {
