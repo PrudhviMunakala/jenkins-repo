@@ -20,7 +20,9 @@ pipeline {
                         echo "deploy"
                     }
                 }
-        post {
+        
+    }
+    post {
             always {
                 echo "This will always run"
             }
@@ -31,5 +33,4 @@ pipeline {
                 echo "This will run only if failed"
             }
         }
-    }
 }
